@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="bg-orange-50 p-4 flex justify-between items-center md:justify-around font-bold">
+      <header className="bg-orange-50 p-4 flex justify-between items-center md:justify-around font-bold md:justify-center">
         {/* Menú hamburguesa (solo mobile) */}
         <div className="md:hidden">
           <button 
@@ -40,20 +40,21 @@ function Navbar() {
         {/* Enlaces de navegación (ocultos en mobile) */}
         <div className="hidden md:flex items-center">
           <nav className="flex space-x-4">
-            <a href="#acerca" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">ACERCA DE</a>
-            <a href="#menus" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">MENÚS</a>
-            <a href="#contactanos" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">CONTÁCTANOS</a>
+            <a href="/" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">INICIO</a>
+            <a href="/nosotros" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">ACERCA DE</a>
+            <a href="/menu" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">MENÚS</a>
           </nav>
         </div>
 
         {/* Logo (centrado en mobile) */}
-        <div className="flex-1 flex justify-center md:flex-none">
-          <img src={logoMariet} alt="mariet-logo" className="h-10 transition-transform hover:scale-105" />
+        <div className="flex-1 flex justify-center md:flex-none ml-25">
+          <img src={logoMariet} alt="mariet-logo" className="h-10 transition-transform hover:scale-105 " />
         </div>
 
         {/* Segundo grupo de enlaces (oculto en mobile) */}
         <div className="hidden md:block">
           <nav className="flex space-x-4">
+            <a href="/contactanos" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">CONTÁCTANOS</a>
             <a href="#novedades" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">NOVEDADES</a>
             <a href="#pedir" className="text-amber-800 hover:text-amber-600 transition-colors duration-300 px-3 py-1 rounded-lg hover:bg-amber-100">PIDE PARA LLEVAR</a>
           </nav>
@@ -87,9 +88,10 @@ function Navbar() {
 
                 <nav className="flex-1 flex flex-col space-y-5">
                   {[
-                    { href: "#acerca", text: "Acerca de" },
-                    { href: "#menus", text: "Menús" },
-                    { href: "#contactanos", text: "Contáctanos" },
+                    {href: '/', text: 'Inicio'},
+                    { href: "/nosotros", text: "Acerca de" },
+                    { href: "/menu", text: "Menús" },
+                    { href: "/contactanos", text: "Contáctanos" },
                     { href: "#novedades", text: "Novedades" },
                     { href: "#pedir", text: "Pide para Llevar" }
                   ].map((item) => (

@@ -11,7 +11,7 @@ const FoodGallery = () => {
   const images = [img1, img2, img3, img4, img5, img6];
 
   return (
-    <section className="bg-[#fef6f0] py-16 px-6 md:px-20 pt-40 bg-orange-50">
+    <section className="bg-[#fef6f0] py-16 px-6 md:px-20 pt-40 bg-orange-50 w-full overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((img, index) => (

@@ -5,7 +5,7 @@ import bgImage from '../../assets/imagen-inicio.png';
 const Header = () => {
   return (
     <header
-      className="relative bg-cover bg-center text-white min-h-[80vh] flex flex-col items-center justify-center font-semibold pb-[6rem] lg:pb-[8rem]"
+      className="relative bg-cover bg-center text-white min-h-[80vh] flex flex-col items-center justify-center font-semibold pb-[6rem] lg:pb-[8rem] "
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="text-center px-4 z-10 mb-8 md:mb-12">

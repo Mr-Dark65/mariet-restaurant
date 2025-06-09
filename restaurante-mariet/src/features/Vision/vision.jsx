@@ -26,7 +26,7 @@ const VisionMariet = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#d9b8a6] text-[#4c2f27] flex flex-col md:flex-row items-center justify-between overflow-hidden"
+      className="bg-[#d9b8a6] text-[#4c2f27] flex flex-col md:flex-row items-center justify-between w-full max-w-screen overflow-hidden"
     >
       <div
         className={`md:w-1/2 py-6 pr-6 pl-8 md:py-10 md:pr-10 md:pl-20 transform transition-all duration-1000 ease-out
